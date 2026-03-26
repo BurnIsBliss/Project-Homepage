@@ -1,14 +1,15 @@
 .headerImage > img,
 .footerImage > img {
-	height: auto;
-	width: 30vw;
+	height: 66vh;
+	width: 28vw;
 }
 
 body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 5vw 5vw;
+	padding: 0 16vw 2.5vh 16vw;
+	margin: 0;
 	gap: 10%;
 	font-family:
 		"Roboto",
@@ -26,14 +27,33 @@ body {
 	box-sizing: border-box;
 }
 
-#header {
-	display: flex;
-	justify-content: center;
+.headerContainer {
+	overflow: hidden;
+	height: 86vh;
 }
 
-.headerImage .heading {
+#header {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	bottom: 28%;
+	width: 76vw;
+	left: 14%;
+}
+
+.headerBG {
+	background-color: rgb(8, 145, 178, 1);
+	transform: scale(1.2) rotate(-10deg);
+	position: relative;
+	height: 75vh;
+	box-shadow: 5px 5px 5px rgb(102, 100, 100);
+	width: 100vw;
+	top: -20vh;
+}
+
+.headerImage > .heading {
 	color: white;
-	font-size: 36px;
+	font-size: 62px;
 	position: absolute;
 	bottom: 0;
 	margin-bottom: 8px;
@@ -46,15 +66,32 @@ body {
 }
 
 .paraContainer {
-	width: 23vw;
-	margin-left: 20px;
+	height: 58vh;
+	padding: 0 20px;
 	box-shadow: 5px 5px 5px rgb(102, 100, 100);
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-evenly;
+	border: 1px solid grey;
+	background-color: white;
 }
 
 .paraContainer > .miniHeading {
-	font-size: 24px;
-	margin: 10px 0;
+	font-size: 64px;
+	margin: 0;
+}
+
+.paraContainer > p {
+	font-size: 28px;
+	line-height: 130%;
+	margin: 0 0;
+}
+
+.iconsHeader {
+	text-align: right;
+}
+
+.iconsHeader > img {
+	height: 40px;
+	margin-right: 10px;
 }
