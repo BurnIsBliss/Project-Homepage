@@ -1,7 +1,7 @@
 .headerImage > img,
 .footerImage > img {
 	height: 66vh;
-	width: 28vw;
+	width: 36vw;
 }
 
 body {
@@ -29,7 +29,7 @@ body {
 
 .headerContainer {
 	overflow: hidden;
-	height: 86vh;
+	height: 83vh;
 }
 
 #header {
@@ -37,8 +37,8 @@ body {
 	align-items: center;
 	position: absolute;
 	bottom: 28%;
-	width: 76vw;
-	left: 14%;
+	width: 84vw;
+	left: 8%;
 }
 
 .headerBG {
@@ -82,7 +82,7 @@ body {
 }
 
 .paraContainer > p {
-	font-size: 28px;
+	font-size: 32px;
 	line-height: 130%;
 	margin: 0 0;
 }
@@ -91,7 +91,11 @@ body {
 	text-align: right;
 }
 
-.iconsHeader > img {
-	height: 40px;
-	margin-right: 10px;
+.iconsHeader > a > img {
+	height: 50px;
+	margin-right: 20px;
+}
+
+#projects {
+	width: 84vw;
 }
