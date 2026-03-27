@@ -99,3 +99,63 @@ body {
 #projects {
 	width: 84vw;
 }
+
+.projectHeading {
+	margin: 0 0 14px 0;
+	font-size: 64px;
+}
+
+.projectContainer {
+	display: flex;
+	gap: 36px;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: center;
+}
+
+.project {
+	height: 24vh;
+	width: 26vw;
+	display: grid;
+	border: 1px solid grey;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+	margin-bottom: 20px;
+}
+
+.iconProject > svg,
+.iconProject > img {
+	height: 40px;
+	margin-left: 12px;
+}
+
+.projectNameContainer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.projectCopyContainer {
+	padding: 8px 18px;
+}
+
+.project p {
+	margin: 0;
+	font-size: 18px;
+	padding-top: 8px;
+}
+
+.project h4 {
+	margin: 0;
+	font-size: 24px;
+}
+
+.projectImage {
+	font-size: 60px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	vertical-align: baseline;
+	height: 15vh;
+	background-color: cadetblue;
+}
