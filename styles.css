@@ -90,8 +90,13 @@ body {
 }
 
 .iconsHeader > a > img {
-	height: 50px;
+	height: auto;
+	width: 50px;
 	margin-right: 20px;
+}
+
+a {
+	text-decoration: none;
 }
 
 #projects {
@@ -115,7 +120,8 @@ body {
 .project {
 	height: 64vh;
 	width: 26vw;
-	display: grid;
+	display: flex;
+	flex-direction: column;
 	border: 1px solid grey;
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 	margin-bottom: 20px;
@@ -171,7 +177,7 @@ body {
 	color: white;
 	font-size: 32px;
 	gap: 36px;
-	padding: 0 30vw;
+	padding: 0 8vw;
 }
 .footerContent {
 	display: flex;
