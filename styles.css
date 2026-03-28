@@ -1,5 +1,4 @@
-.headerImage > img,
-.footerImage > img {
+.headerImage > img {
 	height: 66vh;
 	width: 36vw;
 }
@@ -8,7 +7,6 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 0 16vw 2.5vh 16vw;
 	margin: 0;
 	gap: 10%;
 	font-family:
@@ -45,7 +43,7 @@ body {
 	background-color: rgb(8, 145, 178, 1);
 	transform: scale(1.2) rotate(-10deg);
 	position: relative;
-	height: 75vh;
+	height: 72vh;
 	box-shadow: 5px 5px 5px rgb(102, 100, 100);
 	width: 100vw;
 	top: -20vh;
@@ -111,10 +109,11 @@ body {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-content: center;
+	margin-bottom: 10vh;
 }
 
 .project {
-	height: 24vh;
+	height: 64vh;
 	width: 26vw;
 	display: grid;
 	border: 1px solid grey;
@@ -156,6 +155,61 @@ body {
 	align-items: center;
 	justify-content: center;
 	vertical-align: baseline;
-	height: 15vh;
+	height: 44vh;
 	background-color: cadetblue;
+}
+
+.footerImage > img {
+	height: 42vh;
+	width: 48vw;
+}
+#footer {
+	display: flex;
+	background-color: rgb(8, 145, 178, 1);
+	align-items: center;
+	height: 50vh;
+	color: white;
+	font-size: 32px;
+	gap: 36px;
+	padding: 0 30vw;
+}
+.footerContent {
+	display: flex;
+	width: 84vw;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.leftContainer {
+	height: 42.4vh;
+}
+
+#footer svg {
+	height: 50px;
+	fill: white;
+}
+
+.footerHeading {
+	font-size: 60px;
+	margin: 0;
+}
+
+.phone,
+.email {
+	display: flex;
+	align-items: center;
+	gap: 14px;
+}
+
+.phone {
+	margin-bottom: 12px;
+}
+
+.email {
+	margin-bottom: 24px;
+}
+
+.iconsFooter img {
+	height: 50px;
+	margin-right: 20px;
 }
