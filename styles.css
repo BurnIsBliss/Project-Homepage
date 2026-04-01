@@ -223,6 +223,18 @@ a {
 @media (max-width: 1300px) {
 	.project {
 		width: 38vw;
-		border: 2px solid yellow;
+	}
+
+	.projectContainer {
+		margin-bottom: 20vh;
+	}
+
+	.footerImage > img {
+		height: 60vh;
+		width: 45svh;
+	}
+
+	#footer {
+		height: 75vh;
 	}
 }
