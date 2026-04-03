@@ -220,9 +220,41 @@ a {
 	margin-right: 20px;
 }
 
+#newImage,
+.headingTablet {
+	display: none;
+}
+
 @media (max-width: 1300px) {
+	.headerImage {
+		display: none;
+	}
 	.project {
 		width: 38vw;
+	}
+
+	.headingTablet {
+		text-align: left;
+		display: block;
+		margin: 0;
+		font-size: 64px;
+		width: 100%;
+		position: absolute;
+		color: white;
+		top: -12vh;
+	}
+
+	.headerContainer {
+		margin-bottom: 75px;
+	}
+
+	#newImage {
+		display: block;
+		height: 40vh;
+		float: left;
+		width: 35vw;
+		transform: scale(1.2) translateX(-10px) translateY(-45px);
+		margin-right: 60px;
 	}
 
 	.projectContainer {
@@ -231,10 +263,104 @@ a {
 
 	.footerImage > img {
 		height: 60vh;
-		width: 45svh;
+		width: 45vw;
 	}
 
 	#footer {
 		height: 75vh;
 	}
+	#header {
+		height: 55vh;
+	}
+
+	.paraContainer {
+		display: block;
+		height: 66vh;
+	}
+
+	.paraContainer > .miniHeading {
+		text-align: center;
+		margin-top: 120px;
+		margin-bottom: 15px;
+		font-size: 48px;
+	}
+
+	.paraContainer > p {
+		margin-bottom: 35px;
+	}
+
+	.headerImage {
+		float: left;
+		position: relative;
+		display: none;
+	}
+
+	.headerBG {
+		height: 56vh;
+		transform: scale(1.5) rotate(-10deg);
+	}
+
+	.leftContainer {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.iconsHeader > a > img {
+		height: 38px;
+		margin-right: 12px;
+	}
+
+	.iconProject > svg,
+	.iconProject > img {
+		height: 30px;
+		margin-left: 8px;
+	}
+}
+
+@media (max-width: 1150px) {
+	.paraContainer {
+		height: 70vh;
+	}
+
+	.miniHeading {
+		font-size: 54px;
+	}
+
+	.headingTablet {
+		top: -20vh;
+	}
+	.paraContainer > p {
+		font-size: 28px;
+	}
+
+	#header {
+		height: 45vh;
+	}
+
+	.footerImage > img {
+		height: 45vh;
+		width: 38vw;
+	}
+
+	.footerHeading {
+		font-size: 40px;
+	}
+
+	#footer {
+		font-size: 24px;
+		height: 50vh;
+	}
+
+	#footer svg {
+		height: 30px;
+	}
+
+	.iconsFooter img {
+		height: 30px;
+		margin-right: 12px;
+	}
+}
+
+@media (max-width: 850px) {
 }
