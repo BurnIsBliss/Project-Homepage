@@ -55,6 +55,7 @@ body {
 	position: absolute;
 	bottom: 0;
 	margin-bottom: 8px;
+	text-align: center;
 }
 
 .headerImage {
@@ -289,12 +290,6 @@ a {
 		margin-bottom: 35px;
 	}
 
-	.headerImage {
-		float: left;
-		position: relative;
-		display: none;
-	}
-
 	.headerBG {
 		height: 56vh;
 		transform: scale(1.5) rotate(-10deg);
@@ -363,6 +358,55 @@ a {
 }
 
 @media (max-width: 850px) {
+	#newImage,
+	.headingTablet {
+		display: none;
+	}
+	.headerImage {
+		display: flex;
+		justify-content: left;
+	}
+
+	.headerImage > .heading {
+		margin-left: 24px;
+		text-align: left;
+	}
+
+	.headerBG {
+		height: 66vh;
+	}
+
+	.headerContainer {
+		height: 135vh;
+		margin-bottom: 135px;
+	}
+
+	.paraContainer > .miniHeading {
+		margin-top: 30px;
+	}
+
+	.paraContainer > p {
+		margin-bottom: 18px;
+	}
+
+	.headerImage > img {
+		width: 100%;
+	}
+
+	.iconsHeader {
+		text-align: center;
+	}
+
+	.paraContainer {
+		border: none;
+		box-shadow: none;
+		width: 95vw;
+	}
+	#header {
+		flex-direction: column;
+		height: 64vh;
+	}
+
 	#projects {
 		text-align: center;
 	}
